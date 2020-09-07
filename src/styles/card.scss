@@ -2,8 +2,8 @@
 .card {
   height: 403px;
   width: 200px;
-  padding: 30px 14px 15px;
-
+  padding: 15px 14px;
+  margin-bottom: 50px;
   border: 1px solid $card-border;
   border-radius: 5px;
 
@@ -14,14 +14,15 @@
   }
   &__image {
     display: block;
+    box-sizing: content-box;
     height: 134px;
     width: 160px;
-    margin: 0 auto 45px;
-    transition: outline 0s, transform 1s , padding 1s;
+    margin: 0 auto 30px;
+    padding: 15px 0;
+    transition: outline 0s, transform 1s;
     &:hover {
-      padding: 5px 0;
       outline: 3px solid $card-border;
-      transform: scale(1.2) translateY(-12px);
+      transform: scale(1.2);
     }
   }
 
