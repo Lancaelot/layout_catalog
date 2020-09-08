@@ -1,6 +1,10 @@
 .catalog-container {
-  @include space-between;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  width: 944px;
+  display: grid;
+  grid-gap: 48px;
+  grid-template-columns: repeat(4, 200px);
+  justify-content: center;
+  align-items: center;
+  > div:nth-child(-n+4) {
+    margin-bottom: 2px;
+  }
 }
