@@ -2,20 +2,28 @@
 .card {
   height: 403px;
   width: 200px;
-  padding: 30px 14px 15px;
+  padding: 18px 14px;
   margin-bottom: 50px;
-  border: 1px solid #f3f3f3;
+  border: 1px solid $card-border;
   border-radius: 5px;
 
   font-size: 11px;
+
   &:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.07);
   }
   &__image {
     display: block;
+    box-sizing: content-box;
     height: 134px;
     width: 160px;
-    margin: 0 auto 45px;
+    margin: 0 auto 33px;
+    padding: 12px 0;
+    transition: outline 0s, transform 1s;
+    &:hover {
+      outline: 3px solid $card-border;
+      transform: scale(1.2);
+    }
   }
 
   &__name {
@@ -70,6 +78,8 @@
     text-transform: uppercase;
     text-decoration: none;
     color: #fff;
+
+    transition: color 1s, background-color 1s, border 1s;
     &:hover {
       background-color: #fff;
       border: 1px solid $hover-color;
