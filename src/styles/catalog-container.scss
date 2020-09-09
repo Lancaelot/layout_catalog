@@ -1,6 +1,8 @@
 .catalog-container {
   @include space-between;
+  align-content: space-between;
   flex-wrap: wrap;
-  margin: 0 auto;
+  margin: 50px auto;
   width: 944px;
+  min-height: 856px;
 }
