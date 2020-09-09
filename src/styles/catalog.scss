@@ -1,0 +1,11 @@
+.catalog {
+  &__container {
+    @include space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    
+    width: 944px;
+    min-height: 856px;
+    margin: 50px auto;
+  }
+}
