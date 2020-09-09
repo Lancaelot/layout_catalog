@@ -21,7 +21,7 @@
     line-height: 60px;
     text-transform: uppercase;
     text-decoration: none;
-    color: black;
+    color: $nav-text-color;
 
     transition: color 1s;
     &:hover {
@@ -29,7 +29,7 @@
     }
     &--is-active {
       position: relative;
-      color: #00acdc;
+      color: $active-color;
       &::after {
         content: "";
         display: block;
